@@ -16,7 +16,7 @@ tasks:
     label: Create new directory
     script: |
       mkdir ${output}       
-tasks:                      
+      
   - label: Generate HLS Stream
     type: ffmpeg
     options: [
