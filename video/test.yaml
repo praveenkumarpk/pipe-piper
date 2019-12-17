@@ -16,8 +16,8 @@ tasks:
   - type: bash
     label: Create new directory
     script: |
-      echo ${output}
-      mkdir ${output}
+          echo ${output}
+          mkdir ${output}
 
   - type: bash
     label: create ssh file
