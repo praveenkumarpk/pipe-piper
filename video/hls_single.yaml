@@ -10,7 +10,12 @@ inputs:
     label: Output Directory
     type: string
     required: true
-    
+
+tasks:
+  - type: bash
+    label: Create new directory
+    script: |
+      mkdir ${output}       
 tasks:                      
   - label: Generate HLS Stream
     type: ffmpeg
@@ -34,4 +39,3 @@ tasks:
       -hls_playlist_type,vod,
       -hls_segment_filename,"${output}/720p_%03d.ts","${output}/720p.m3u8"
     ]
-    
