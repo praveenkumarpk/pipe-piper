@@ -1,21 +1,12 @@
-label: HLS (Single Bitrate)
-
+label: Hello World
+    
 inputs:
-  - name: input
-    label: Input File
+  - name: name
+    label: Your Name
     type: string
     required: true
-
-  - name: output
-    label: Output Directory
-    type: string
-    required: true
-
-tasks:
-
-  - type: bash
-    label: Create new directory
-    script: |
-      echo "HI"
-      echo ${output}
-      mkdir ${output}
+    
+tasks:      
+  - label: Print Hello Message
+    type: print
+    text: "Hello ${name}!"
