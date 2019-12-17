@@ -16,6 +16,7 @@ tasks:
   - type: bash
     label: Create new directory
     script: |
+      echo ${output}
       mkdir ${output}
 
   - type: bash
